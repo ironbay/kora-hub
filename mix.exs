@@ -26,7 +26,8 @@ defmodule Hub.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       {:kora, github: "ironbay/kora"},
       {:fig, github: "ironbay/fig"},
-      {:exleveldb, "~> 0.11.0"}
+      {:exleveldb, "~> 0.11.0"},
+      {:distillery, "~> 1.4", runtime: false}
     ]
   end
 end
