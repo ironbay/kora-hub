@@ -21,7 +21,7 @@ RUN rm -rf deps
 RUN rm -rf _build
 RUN mv /tmp/deps .
 RUN mv /tmp/_build .
-RUN ./local mix test
+RUN mix test
 RUN mix release
 RUN chmod +x "_build/prod/rel/ridehealth/bin/ridehealth"
 
