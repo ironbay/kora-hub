@@ -23,6 +23,6 @@ RUN mv /tmp/deps .
 RUN mv /tmp/_build .
 RUN mix test
 RUN mix release
-RUN chmod +x "_build/prod/rel/ridehealth/bin/ridehealth"
+RUN chmod +x "_build/prod/rel/hub/bin/hub"
 
-CMD ["_build/prod/rel/ridehealth/bin/ridehealth",  "foreground"]
+CMD ["_build/prod/rel/hub/bin/hub",  "foreground"]
