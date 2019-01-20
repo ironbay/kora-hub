@@ -11,6 +11,11 @@ defmodule Hub.Application do
     children = [
       # Starts a worker by calling: Hub.Worker.start_link(arg)
       # {Hub.Worker, arg},
+      Kora.Store.Postgres.child_spec(
+        hostname: "localhost",
+        database: "kora",
+        username: "postgres"
+      ),
       {Kora.Server, port: 12000}
     ]
 
