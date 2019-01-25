@@ -2,9 +2,11 @@ defmodule Hub.Config do
   use Fig
 
   config :kora, %{
-    writes: [{Kora.Store.Postgres.JSON, [name: :postgres, schema: Kora.Store.Schema.Example]}],
-    read: {Kora.Store.Postgres.JSON, [name: :postgres, schema: Kora.Store.Schema.Example]},
-    interceptors: [],
+    writes: [{Kora.Store.LMDB, [directory: '/home/dax/tmp/lmdb']}],
+    read: {Kora.Store.LMDB, [directory: '/home/dax/tmp/lmdb']},
+    interceptors: [
+      Hub.Interceptor
+    ],
     commands: []
     # format: Kora.Format.Sample
   }

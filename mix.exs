@@ -28,8 +28,10 @@ defmodule Hub.MixProject do
       {:fig, github: "ironbay/fig"},
       {:exleveldb, "~> 0.11.0"},
       {:distillery, "~> 1.4", runtime: false},
-      {:postgrex, "~> 0.14.1", override: true},
-      {:epgsql, "~> 4.1", override: true}
+      {:epgsql, "~> 4.1", override: true},
+      {:nimble_csv, "~> 0.3"},
+      {:mariaex, "~> 0.8.2"},
+      {:db_connection, "~> 1.1", override: true}
     ]
   end
 end
