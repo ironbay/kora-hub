@@ -24,6 +24,7 @@ defmodule Hub.MixProject do
     [
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:elmdb, "~> 0.4.1"},
       {:kora, path: "../kora"},
       {:fig, github: "ironbay/fig"},
       {:exleveldb, "~> 0.11.0"},
